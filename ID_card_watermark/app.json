@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/feedback/feedback"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "身份证水印",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#080808",
+    "selectdColor": "#d3d3d3",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/selectHome.png"
+      },
+      {
+        "pagePath": "pages/feedback/feedback",
+        "text": "反馈",
+        "iconPath": "images/help.png",
+        "selectedIconPath": "images/selectHelp.png"
+      }
+    ],
+    "boderStyle": "bottom"
+  }
+}

@@ -1,0 +1,42 @@
+<view class="page">
+  <view bindtap='chooseImg' class="page__hd">
+    <canvas canvasId="myCanvas" class="canvas" hidden="{{bool}}" style="width:100%;height:{{canvasH}}px;"></canvas>
+    <view class="bgWord" wx:if="{{!draw}}">
+      <text>点击此处打开图片\n</text>
+      <text>再次点击可更换图片\n</text>
+      <text>本小程序不会上传任何数据! 
+            所有操作均在本地完成!</text>
+    </view>
+  </view>
+  <view class="page__bd  page__bd_spacing">
+    <view class="section section1">
+      <view class="left">文字</view>
+      <view class="middle">
+        <input bindblur="handleTextBlur" bindfocus="handleTextFocus" bindinput="handleTextChange" class="{{inputFocus?'active':''}}" value="{{text}}" selection-start='0' selection-end='-1' focus='{{inputFocus}}'></input>
+      </view>
+      <view class='clear_group' bindtap='clearText'>
+        <image class='clear_img' src='../../images/clear.png' mode='aspectFit'/>
+      </view>
+    </view>
+    <view class="section">
+      <view class="left">尺寸</view>
+      <view bindtap="handelSizeClick" class="right">
+        <view class="{{currentSizeIndex==item[0]?'circleSize active':'circleSize'}}" id="{{item[0]}}" wx:for="{{SizeMap}}" wx:key="*this">{{item[1]}}</view>
+      </view>
+    </view>
+    <view class="section">
+      <view class="left">密度</view>
+      <view bindtap="handelDensityClick" class="right">
+        <view class="{{currentDensityIndex==item[0]?'circleSize active':'circleSize'}}" id="{{item[0]}}" wx:for="{{DensityMapItem}}" wx:key="*this">{{item[1]}}</view>
+      </view>
+    </view>
+    <view class="section">
+      <view class="left">颜色</view>
+      <view bindtap="handleColorClick" class="right">
+        <view class="{{currentColorIndex==item[0]?'circle active':'circle'}}" id="{{item[0]}}" style="{{'background:'+item[1]}}" wx:for="{{ColorMap}}" wx:key="*this"></view>
+      </view>
+    </view>
+    <button bindtap="saveImg" class="btn big secondary primary">保存</button>
+  </view>
+
+</view>

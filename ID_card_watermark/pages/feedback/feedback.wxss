@@ -1,0 +1,277 @@
+/* pages/feedback.wxss */
+.page__bd {
+    text-align: center;
+}
+
+.section {
+  font-size: 12px;
+  padding: 10px 5px 0 0;
+  border-bottom: dashed 1px #cecece;
+  width: 830rpx;
+}
+
+.page__bd .section {
+    height: 300rpx;
+    line-height: 100rpx;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center
+}
+
+.page__bd .section textarea {
+  border: solid 1px #ccc;
+  margin: 0 3% 30rpx 3%;
+  background-color: #fff;
+  border-radius: 4px;
+  height: 85%;
+  width: 90%;
+  text-align: left;
+  line-height: 1;
+  font-size: 30rpx;
+  padding: 10rpx;
+}
+
+.page__bd .section .textarea-holder {
+  color: #b2b2b2;
+  font-size: 30rpx;
+}
+
+.bgWord {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 80rpx 0 0;
+    width: 100%;
+    height: 300rpx;
+    text-align: center;
+    color: #888;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.bgWord .icon_line {
+    font-size: 56rpx;
+}
+
+.icon_line image {
+    height: 117rpx;
+    width: 117rpx;
+}
+
+.bgWord .text_line {
+    margin-top: 20rpx;
+    font-size: 30rpx;
+    height: 40rpx;
+    line-height: 20rpx;
+}
+
+.page__bd .section .left {
+    padding-left: 10rpx;
+    float: left;
+    width: 105rpx;
+    height: 100%;
+    color: #888;
+    text-align: left;
+    font-size: 28rpx;
+}
+
+.page__bd .section .right {
+    float: right;
+    width: 630rpx;
+    height: 100%;
+    color: #b2b2b2;
+    font-size: 30rpx;
+    text-align: left;
+    overflow: hidden;
+}
+
+.page__bd .section .right input {
+    height: 100rpx;
+    line-height: 100rpx;
+}
+
+.page__bd .section .right input.active {
+    color: #000;
+}
+
+.page__bd .btn {
+    width: 670rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 36rpx;
+    border-radius: 4px;
+}
+
+.page__bd .normal {
+    margin-top: 50rpx;
+}
+
+.page__bd .primary {
+    color: #fff;
+    background: #108ee9;
+    margin-top: 30rpx;
+}
+
+.circle {
+    display: inline-block;
+    margin: 20rpx 20rpx 0 0;
+    width: 58rpx;
+    height: 58rpx;
+    border-radius: 50%;
+    border: 1rpx solid #979797;
+    background: #000;
+}
+
+.circle.active {
+    margin-top: 15rpx;
+    width: 68rpx;
+    height: 68rpx;
+}
+
+.circleSize {
+    display: inline-block;
+    margin: 20rpx 10rpx 5rpx 5rpx;
+    width: 58rpx;
+    height: 58rpx;
+    /* border-radius: 50%; */
+    /* border: 1rpx solid #979797; */
+    line-height:53rpx;
+    /* background: rgb(255, 255, 255); */
+}
+
+.circleSize.active {
+  font-size: 120%;
+  color: #108EE9;
+}
+
+.contact,.contact::after,.contact::before {
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    vertical-align: top;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+    font-size: 30rpx;
+    color: #ff5a73;
+    font-weight: bolder;
+}
+
+.weui-footer {
+    margin-top: 40rpx;
+}
+
+.weui-footer__text {
+    margin-top: 20rpx;
+}
+
+.page__bd .btn-share {
+    margin-top: 50rpx;
+    color: #108EE9;
+    overflow: visible;
+    background: none;
+    border: 1px solid #108EE9;
+}
+
+.share-icon {
+    margin: -6rpx 0 0 6rpx;
+    display: inline-block;
+    height: 32rpx;
+    width: 32rpx;
+    vertical-align: middle;
+}
+
+.fiexds {
+    position: absolute;
+    left: 100rpx;
+    top: 100rpx;
+    width: 557rpx;
+    height: 1000rpx;
+    background-color: #fff;
+    border-radius: 10rpx;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    position: absolute;
+    right: 5rpx;
+    top: 10%;
+    z-index: 999999;
+    width: 80rpx;
+    height: 80rpx;
+    background: rgba(0,0,0,0.6);
+    border-radius: 250rpx;
+}
+
+.img image {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.out {
+    position: absolute;
+    top: 70rpx;
+    right: 10%;
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.out image {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    background-color: #666;
+}
+
+.moreall {
+    padding: 13rpx 0;
+    height: 110rpx;
+    font-size: 80rpx;
+    text-align: center;
+    font-weight: bolder;
+    color: #ff5a73;
+    border-bottom: 5px #eeeeee solid;
+}
+
+.app {
+    padding: 30rpx 0;
+    clear: both;
+    height: 90rpx;
+    border-bottom: 2rpx #eeeeee solid;
+}
+
+.appimg {
+    width: 100rpx;
+    display: block;
+    height: 100rpx;
+    float: left;
+    padding-left: 30rpx;
+}
+
+.txt {
+    float: left;
+    padding: 25rpx 0 0 25rpx;
+    font-size: 32rpx;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0,0,0,0.5);
+}

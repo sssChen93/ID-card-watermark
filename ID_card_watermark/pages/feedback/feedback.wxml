@@ -1,0 +1,8 @@
+<!--pages/feedback.wxml-->
+<view class="page__bd">
+  <view class='section'>
+    <textarea placeholder='请输入您的意见或建议。' class='textarea' placeholder-class='textarea-holder' bindfocus='textAreaFocus' bindblur='textAreaBlur' bindinput='textAreaInput' value='{{text}}'></textarea>
+  </view>
+
+  <button bindtap="uploadText" class="btn big secondary primary">确认</button>
+</view>
